@@ -127,8 +127,8 @@ void Vpnservice::generatexrayconfig()
     process = new QProcess(this);
     connect(process, &QProcess::stateChanged, this, &Vpnservice::stas);
     connect(process, &QProcess::readyReadStandardOutput, this, [=]() {
-        QByteArray output = process->readAllStandardOutput();  // читаем весь доступный вывод
-        QString outputString = QString::fromUtf8(output);      // конвертируем в QString
+        QByteArray output = process->readAllStandardOutput(); 
+        QString outputString = QString::fromUtf8(output);      
         qDebug() << "Output:" << outputString;
     });
 
