@@ -5,7 +5,7 @@ layout(location = 0) out vec4 fragColor;
 layout(std140, binding = 0) uniform buf {
     mat4 qt_Matrix;
     float qt_Opacity;
-    vec2 u_resolution; // если нужно для blur
+    vec2 u_resolution; 
     vec3 topColor;
     vec3 bottomColor;
 };
